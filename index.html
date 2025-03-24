@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhaib Siddiqui - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        a {
+            color: #00e0ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff00ff;
+        }
+        section {
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+        .project, .job {
+            text-align: left;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+        }
+        h2 {
+            border-bottom: 2px solid #00e0ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "▶";
+            color: #00e0ff;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suhaib Ahmad Siddiqui</h1>
+        <p>Tempe, AZ | 623.320.5231 | sasidd11@asu.edu | <a href="https://github.com/Suhaib28">GitHub</a></p>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Mesa Historical Museum Android App (Jan 2025)</h3>
+            <ul>
+                <li>Developed an interactive Android app for exploring Arizona's baseball history.</li>
+                <li>Implemented RecyclerView for an interactive timeline with multimedia elements.</li>
+                <li>Integrated Room Database and LiveData for dynamic player profiles.</li>
+                <li>Enhanced UI/UX with ConstraintLayout, reducing load times by 40%.</li>
+                <li>Led collaboration with historians, increasing museum visitor engagement by 50%.</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>Sayyam for All Web Development (Sep 2024 - Dec 2024)</h3>
+            <ul>
+                <li>Led a team of five as Communication Lead to connect volunteers with organizations.</li>
+                <li>Implemented real-time communication features using WebSockets and WebRTC.</li>
+                <li>Deployed on AWS EC2 with 99.9% uptime, improving platform reliability.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Undergraduate Teaching Assistant (Aug 2023 - Dec 2023)</h3>
+            <ul>
+                <li>Provided student assistance with coursework and projects.</li>
+                <li>Led Raspberry Pi projects and delivered UI/UX design presentations.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science, Computer Science | Arizona State University | May 2026 | 3.89 GPA</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Java, Python, C++, Matlab, HTML, C</li>
+            <li>Tools: GitHub, Tableau, Power BI, Raspberry Pi</li>
+        </ul>
+    </section>
+</body>
+</html>
