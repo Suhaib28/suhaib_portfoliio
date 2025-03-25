@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhaib Siddiqui - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: #fff;
+            text-align: center;
+            animation: gradientBG 10s infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% { background: linear-gradient(135deg, #000428, #004e92); }
+            100% { background: linear-gradient(135deg, #004e92, #000428); }
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        a {
+            color: #00e0ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ff00ff;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .project, .job {
+            text-align: left;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .project:hover, .job:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            border-bottom: 3px solid #00e0ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "▶";
+            color: #00e0ff;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suhaib Ahmad Siddiqui</h1>
+        <p>Tempe, AZ | 623.320.5231 | sasidd11@asu.edu | <a href="https://github.com/Suhaib28">GitHub</a></p>
+    </header>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Mesa Historical Museum Android App (Jan 2025)</h3>
+            <ul>
+                <li>Developed an interactive Android app to explore Arizona's baseball history with multimedia elements.</li>
+                <li>Designed a dynamic player profiles section using Room Database and LiveData.</li>
+                <li>Implemented an interactive timeline with RecyclerView, allowing smooth navigation of historical events.</li>
+                <li>Enhanced user engagement by 50% through collaboration with historians and improved UI/UX.</li>
+                <li>Integrated caching mechanisms with SharedPreferences and Glide to ensure offline accessibility.</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>Sayyam for All Web Development (Sep 2024 - Dec 2024)</h3>
+            <ul>
+                <li>Led a team of five as Communication Lead to develop an application connecting volunteers with organizations.</li>
+                <li>Integrated real-time communication features using WebSockets and WebRTC.</li>
+                <li>Deployed on AWS EC2, achieving 99.9% uptime and enhancing platform reliability.</li>
+                <li>Implemented secure authentication and real-time database updates.</li>
+            </ul>
+        </div>
+        
+        <div class="project">
+            <h3>Spatula X: Assistive Tool for the Visually Impaired (Jan 2023 - Mar 2023)</h3>
+            <ul>
+                <li>Designed a smart kitchen tool using Raspberry Pi and ultrasonic sensors to assist visually impaired users.</li>
+                <li>Implemented real-time safety alerts for heat and proximity detection, enhancing user security.</li>
+                <li>Utilized PWM control for vibration motor and buzzer alerts, achieving 95% accuracy in triggering safety warnings.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Random Password Generator in Java (Jun 2023)</h3>
+            <ul>
+                <li>Developed a customizable password generator supporting different character sets and security levels.</li>
+                <li>Led a hands-on session with 90% attendance, demonstrating practical applications of password security.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Undergraduate Teaching Assistant (Aug 2023 - Dec 2023)</h3>
+            <ul>
+                <li>Guided students in coursework, Raspberry Pi projects, and debugging techniques.</li>
+                <li>Led lectures on UI/UX design, helping students refine their project presentations.</li>
+                <li>Created supplemental materials and hands-on coding exercises to reinforce key concepts.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science, Computer Science | Arizona State University | May 2026 | 3.89 GPA</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Java, Python, C++, Matlab, HTML, C</li>
+            <li>Tools: GitHub, Tableau, Power BI, Raspberry Pi, AWS, WebSockets, WebRTC</li>
+            <li>Design: UI/UX, Overleaf, Wireframing, Responsive Web Design</li>
+            <li>Database Management: Room Database, SQL, Firebase</li>
+        </ul>
+    </section>
+</body>
+</html>
